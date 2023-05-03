@@ -8,6 +8,7 @@
 
 main {
   padding-top: 80px;
+  background: linear-gradient(178.7deg, #e4ecff 1.11%, rgba(234, 240, 255, 0) 103.22%);
 }
 
 body,
@@ -216,7 +217,6 @@ button {
   background-color: #293FCC;
   border-radius: 6px;
   border: none;
-  margin-left: 40px;
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.4625rem;
@@ -275,7 +275,7 @@ a span {
 }
 #header .header__navbar {
   width: 100%;
-  margin-left: 30%;
+  margin-left: 25%;
   display: flex;
   align-items: center;
 }
@@ -293,6 +293,14 @@ a span {
 }
 #header .header__navbar .header__item .header__link:hover {
   color: #293FCC;
+}
+#header .header__navbar .header__button {
+  margin-left: 5%;
+}
+@media screen and (max-width: 992px) {
+  #header .header__navbar .header__button {
+    margin: 0;
+  }
 }
 #header .header__burger {
   display: none;
@@ -380,4 +388,69 @@ a span {
   to {
     opacity: 1;
   }
+}
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+}
+.hero__content {
+  max-width: 450px;
+}
+.hero__content .hero__subtitile {
+  width: 190px;
+  line-height: 28px;
+  background-color: #fff;
+  color: #293FCC;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .hero__content .hero__subtitile {
+    margin: 0 auto;
+  }
+}
+.hero__content .hero__title {
+  margin-top: 15px;
+}
+.hero__content .hero__desc {
+  margin-top: 15px;
+}
+.hero__content .hero__buttons {
+  display: flex;
+  margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+  .hero__content .hero__buttons {
+    display: grid;
+    justify-content: center;
+  }
+}
+.hero__content .hero__buttons button[alt=video] {
+  background: none;
+  color: #090F4E;
+}
+.hero__content .hero__buttons button[alt=video] i {
+  margin: 5px;
+}
+@media screen and (max-width: 992px) {
+  .hero__content .hero__buttons button[alt=video] {
+    margin-top: 5%;
+  }
+}
+.hero__img {
+  width: 100%;
+}
+.hero__img img {
+  width: 100%;
 }

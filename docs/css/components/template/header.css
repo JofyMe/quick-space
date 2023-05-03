@@ -18,7 +18,7 @@
 }
 #header .header__navbar {
   width: 100%;
-  margin-left: 30%;
+  margin-left: 25%;
   display: flex;
   align-items: center;
 }
@@ -36,6 +36,14 @@
 }
 #header .header__navbar .header__item .header__link:hover {
   color: #293FCC;
+}
+#header .header__navbar .header__button {
+  margin-left: 5%;
+}
+@media screen and (max-width: 992px) {
+  #header .header__navbar .header__button {
+    margin: 0;
+  }
 }
 #header .header__burger {
   display: none;

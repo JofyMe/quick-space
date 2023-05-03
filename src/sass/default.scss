@@ -11,6 +11,7 @@
 
 main {
   padding-top: $height-header;
+  background: linear-gradient(178.7deg, #e4ecff 1.11%, rgba(234, 240, 255, 0) 103.22%);
 }
 
 body,
@@ -102,7 +103,6 @@ button {
   border-radius: 6px;
   border: none;
 
-  margin-left: 40px;
   @include font(1.125rem, 500, $white);
 
   &:hover {
