@@ -1,0 +1,142 @@
+@import "../../variables.scss";
+
+#header {
+  width: 100%;
+  height: $height-header;
+  background-color: $dark-color;
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $link-color;
+
+    &__logo {
+      a {
+        img {
+          z-index: 10;
+        }
+      }
+    }
+
+    &__navbar {
+      width: 100%;
+      margin-left: 30%;
+      display: flex;
+      align-items: center;
+
+      &.open {
+        display: flex;
+        margin: 0;
+      }
+      .header__menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .header__item {
+        .header__link {
+          color: $link-color;
+
+          &:hover {
+            color: $link-color-hover;
+          }
+        }
+      }
+    }
+
+    &__burger {
+      display: none;
+      position: relative;
+      z-index: 50;
+      align-items: center;
+      justify-content: flex-end;
+      width: 30px;
+      height: 18px;
+
+      &.active {
+        span {
+          transform: scale(0);
+        }
+        &::before {
+          top: 50%;
+          transform: rotate(-45deg) translate(0, -50%);
+        }
+        &::after {
+          bottom: 50%;
+          transform: rotate(45deg) translate(0, 50%);
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $light-color;
+        transition: all 0.3s ease 0s;
+        top: 0;
+      }
+      
+      &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background-color: $light-color;
+        transition: all 0.3s ease 0s;
+        bottom: 0;
+      }
+
+      span {
+        height: 2px;
+        width: 80%;
+        transform: scale(1);
+        background-color: $light-color;
+      }
+    }
+
+    @media (max-width: $bp-large) {
+      &__burger {
+        display: flex;
+      }
+
+      &__navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: $dark-color;
+        animation: burgerAnimation 0.4s;
+
+        .header__menu {
+          flex-direction: column;
+          row-gap: 30px;
+          height: 50%;
+          align-items: center;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

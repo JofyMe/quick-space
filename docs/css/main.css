@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding-top: 80px;
+}
+
+body,
+html,
+#wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: #f8f9fa;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 1280px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.052rem;
+  font-weight: 600;
+  line-height: 3.9676rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.7468rem;
+    line-height: 3.6624rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.4416rem;
+    line-height: 3.3572rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.1364rem;
+    line-height: 3.052rem;
+  }
+}
+
+h2 {
+  font-size: 2.441rem;
+  font-weight: 700;
+  line-height: 3.1733rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 2.1969rem;
+    line-height: 2.9292rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.9528rem;
+    line-height: 2.6851rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.7087rem;
+    line-height: 2.441rem;
+  }
+}
+
+h3 {
+  font-size: 1.953rem;
+  font-weight: 600;
+  line-height: 2.5389rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h3 {
+    font-size: 1.7577rem;
+    line-height: 2.3436rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.5624rem;
+    line-height: 2.1483rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 1.3671rem;
+    line-height: 1.953rem;
+  }
+}
+
+h4 {
+  font-size: 1.563rem;
+  font-weight: 600;
+  line-height: 2.0319rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    font-size: 1.4067rem;
+    line-height: 1.8756rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.2504rem;
+    line-height: 1.7193rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h4 {
+    font-size: 1.0941rem;
+    line-height: 1.563rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.625rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h5 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h5 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h5 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  h6 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h6 {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  h6 {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  p {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3rem;
+  color: #212529;
+}
+@media screen and (max-width: 992px) {
+  button {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  button {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  button {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+}
+
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span,
+p span {
+  color: #ffc107;
+}
+
+#header {
+  width: 100%;
+  height: 80px;
+  background-color: #343a40;
+  opacity: 0.95;
+  display: flex;
+  position: fixed;
+  z-index: 10;
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8f9fa;
+}
+#header .header__logo a img {
+  z-index: 10;
+}
+#header .header__navbar {
+  width: 100%;
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+}
+#header .header__navbar.open {
+  display: flex;
+  margin: 0;
+}
+#header .header__navbar .header__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#header .header__navbar .header__item .header__link {
+  color: #f8f9fa;
+}
+#header .header__navbar .header__item .header__link:hover {
+  color: #ffc107;
+}
+#header .header__burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+#header .header__burger.active span {
+  transform: scale(0);
+}
+#header .header__burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+#header .header__burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+#header .header__burger::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease 0s;
+  top: 0;
+}
+#header .header__burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease 0s;
+  bottom: 0;
+}
+#header .header__burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: #f8f9fa;
+}
+@media (max-width: 992px) {
+  #header .header__burger {
+    display: flex;
+  }
+  #header .header__navbar {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: #343a40;
+    animation: burgerAnimation 0.4s;
+  }
+  #header .header__navbar .header__menu {
+    flex-direction: column;
+    row-gap: 30px;
+    height: 50%;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

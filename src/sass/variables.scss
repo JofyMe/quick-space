@@ -1,0 +1,47 @@
+//?FONTS
+$primary-font: "Roboto";
+$secondary-font: "";
+$default-font: sans-serif;
+
+//?COLORS
+//Main colors
+$primary-color: #007bff; 
+$secondary-color: #6c757d;
+$white: #fff; 
+$black: #000;
+
+//UI colors
+$success-color: #28a745; 
+$danger-color: #dc3545; 
+$info-color: #17a2b8; 
+$warning-color: #ffc107; 
+$light-color: #f8f9fa; 
+$dark-color: #343a40; 
+
+//?COMPONENTS COLORS
+$background-color: $light-color; 
+$link-color: $light-color;
+$link-color-active: $warning-color; 
+$link-color-hover: $warning-color;
+$text-color: #212529; 
+$border-color: #ced4da;
+
+//?BREAK POINTS
+$bp-small: 480px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1200px;
+
+//?INDENTS
+$indents: 4px;
+
+//Header
+$height-header: 80px;
+
+
+
+
+
+
+
+
