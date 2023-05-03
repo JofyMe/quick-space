@@ -3,7 +3,7 @@
 #header {
   width: 100%;
   height: $height-header;
-  background-color: $dark-color;
+  background-color: $primary-color-light;
   opacity: 0.95;
   display: flex;
   position: fixed;
@@ -36,7 +36,7 @@
       .header__menu {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
       }
       .header__item {
         .header__link {
@@ -61,42 +61,45 @@
       &.active {
         span {
           transform: scale(0);
+          background-color: $white;
         }
         &::before {
           top: 50%;
           transform: rotate(-45deg) translate(0, -50%);
+          background-color: $white;
         }
         &::after {
           bottom: 50%;
           transform: rotate(45deg) translate(0, 50%);
+          background-color: $white;
         }
       }
 
       &::before {
         content: "";
         position: absolute;
-        height: 2px;
+        height: 3px;
         width: 100%;
-        background-color: $light-color;
+        background-color: $secondary-color;
         transition: all 0.3s ease 0s;
         top: 0;
       }
-      
+
       &::after {
         content: "";
         position: absolute;
-        height: 2px;
+        height: 3px;
         width: 100%;
-        background-color: $light-color;
+        background-color: $secondary-color;
         transition: all 0.3s ease 0s;
         bottom: 0;
       }
 
       span {
-        height: 2px;
-        width: 80%;
+        height: 3px;
+        width: 100%;
         transform: scale(1);
-        background-color: $light-color;
+        background-color: $secondary-color;
       }
     }
 
@@ -125,8 +128,15 @@
           flex-direction: column;
           row-gap: 30px;
           height: 50%;
+
           align-items: center;
           margin: auto;
+
+          .header__item {
+            .header__link {
+              color: $white;
+            }
+          }
         }
       }
     }
