@@ -1,64 +1,82 @@
 @import "variables.scss";
 
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: $bp-large) {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    text-align: center;
-  }
+  background: linear-gradient(178.7deg, #e4ecff 1.11%, rgba(234, 240, 255, 0) 120%);
+  .hero__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
 
-  &__content {
-    max-width: 450px;
-
-    .hero__subtitile {
-      width: 190px;
-      line-height: 28px;
-      background-color: $white;
-      color: $primary-color;
-      border-radius: 10px;
-      padding: 5px;
-      text-align: center;
-
-      @media screen and (max-width: $bp-large) {
-        margin: 0 auto;
-      }
-    }
-    .hero__title {
-      margin-top: 15px;
-    }
-    .hero__desc {
-      margin-top: 15px;
-    }
-    .hero__buttons {
+    @media screen and (max-width: $bp-large) {
       display: flex;
-      margin-top: 40px;
+      flex-wrap: wrap-reverse;
+      text-align: center;
+    }
+    .hero__content {
+      max-width: 450px;
 
-      @media screen and (max-width: $bp-large) {
-        display: grid;
-        justify-content: center;
-      }
+      .hero__subtitile {
+        width: 190px;
+        line-height: 28px;
+        background-color: $white;
+        color: $primary-color;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
 
-      button[alt="video"] {
-        background: none;
-        color: $secondary-color;
-        i {
-          margin: 5px;
-        }
         @media screen and (max-width: $bp-large) {
-          margin-top: 5%;
+          margin: 0 auto;
+        }
+      }
+      .hero__title {
+        margin-top: 15px;
+      }
+      .hero__desc {
+        margin-top: 15px;
+      }
+      .hero__buttons {
+        display: flex;
+        margin-top: 40px;
+
+        @media screen and (max-width: $bp-large) {
+          display: grid;
+          justify-content: center;
+        }
+
+        button[alt="video"] {
+          background: none;
+          color: $secondary-color;
+          i {
+            margin: 5px;
+          }
+          @media screen and (max-width: $bp-large) {
+            margin-top: 5%;
+          }
         }
       }
     }
   }
-  &__img {
+  .hero__img {
     width: 100%;
     img {
       width: 100%;
     }
+  }
+}
+
+.brands {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+
+  margin: 6% auto;
+
+  .brands__logo {
+    width: 110px;
+    display: flex;
+    margin: 0 auto;
   }
 }

@@ -9,6 +9,10 @@
 
     <!-- STYLES -->
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -61,30 +65,52 @@
       </header>
 
       <main>
-        <section class="hero container">
-          <div class="hero__content">
-            <h4 class="hero__subtitile">Welcome QuickSpace</h4>
-            <h1 class="hero__title">
-              Satisfied Customer Is the Best Business Strategy
-            </h1>
-            <p class="hero__desc">
-              Backed with vast experience and fully up to date skills set, at
-              Enuke Software offer the best in class E-Prescription solution
-            </p>
-            <div class="hero__buttons">
-              <button>Try Free</button>
-              <button alt="video">
-                <i class="fa-sharp fa-regular fa-circle-play"></i> View Demo
-              </button>
+        <section class="hero">
+          <div class="hero__container container">
+            <div class="hero__content">
+              <h4 class="hero__subtitile">Welcome QuickSpace</h4>
+              <h1 class="hero__title">
+                Satisfied Customer Is the Best Business Strategy
+              </h1>
+              <p class="hero__desc">
+                Backed with vast experience and fully up to date skills set, at
+                Enuke Software offer the best in class E-Prescription solution
+              </p>
+              <div class="hero__buttons">
+                <button>Try Free</button>
+                <button alt="video">
+                  <i class="fa-sharp fa-regular fa-circle-play"></i> View Demo
+                </button>
+              </div>
+            </div>
+            <div class="hero__img">
+              <img src="images/block/hero/main.png" alt="" />
             </div>
           </div>
-          <div class="hero__img">
-            <img src="images/block/hero/main.png" alt="" />
-          </div>
         </section>
+
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper brands">
+            <div class="swiper-slide">
+              <img class="brands__logo" src="images/block/brands/1.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="brands__logo" src="images/block/brands/2.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="brands__logo" src="images/block/brands/3.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img class="brands__logo" src="images/block/brands/4.png" alt="" />
+            </div>
+          </div>
+        </div>
       </main>
     </div>
 
+    <!-- Slider main container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
 </html>

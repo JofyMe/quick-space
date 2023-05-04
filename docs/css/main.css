@@ -8,7 +8,6 @@
 
 main {
   padding-top: 80px;
-  background: linear-gradient(178.7deg, #e4ecff 1.11%, rgba(234, 240, 255, 0) 103.22%);
 }
 
 body,
@@ -390,6 +389,9 @@ a span {
   }
 }
 .hero {
+  background: linear-gradient(178.7deg, #e4ecff 1.11%, rgba(234, 240, 255, 0) 120%);
+}
+.hero .hero__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -397,16 +399,16 @@ a span {
   align-items: center;
 }
 @media screen and (max-width: 992px) {
-  .hero {
+  .hero .hero__container {
     display: flex;
     flex-wrap: wrap-reverse;
     text-align: center;
   }
 }
-.hero__content {
+.hero .hero__container .hero__content {
   max-width: 450px;
 }
-.hero__content .hero__subtitile {
+.hero .hero__container .hero__content .hero__subtitile {
   width: 190px;
   line-height: 28px;
   background-color: #fff;
@@ -416,41 +418,54 @@ a span {
   text-align: center;
 }
 @media screen and (max-width: 992px) {
-  .hero__content .hero__subtitile {
+  .hero .hero__container .hero__content .hero__subtitile {
     margin: 0 auto;
   }
 }
-.hero__content .hero__title {
+.hero .hero__container .hero__content .hero__title {
   margin-top: 15px;
 }
-.hero__content .hero__desc {
+.hero .hero__container .hero__content .hero__desc {
   margin-top: 15px;
 }
-.hero__content .hero__buttons {
+.hero .hero__container .hero__content .hero__buttons {
   display: flex;
   margin-top: 40px;
 }
 @media screen and (max-width: 992px) {
-  .hero__content .hero__buttons {
+  .hero .hero__container .hero__content .hero__buttons {
     display: grid;
     justify-content: center;
   }
 }
-.hero__content .hero__buttons button[alt=video] {
+.hero .hero__container .hero__content .hero__buttons button[alt=video] {
   background: none;
   color: #090F4E;
 }
-.hero__content .hero__buttons button[alt=video] i {
+.hero .hero__container .hero__content .hero__buttons button[alt=video] i {
   margin: 5px;
 }
 @media screen and (max-width: 992px) {
-  .hero__content .hero__buttons button[alt=video] {
+  .hero .hero__container .hero__content .hero__buttons button[alt=video] {
     margin-top: 5%;
   }
 }
-.hero__img {
+.hero .hero__img {
   width: 100%;
 }
-.hero__img img {
+.hero .hero__img img {
   width: 100%;
+}
+
+.brands {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  margin: 6% auto;
+}
+.brands .brands__logo {
+  width: 110px;
+  display: flex;
+  margin: 0 auto;
 }
