@@ -20,6 +20,14 @@ html,
   background-color: #fff;
 }
 
+section {
+  margin: 10% auto;
+}
+section:first-child {
+  padding-top: 5%;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -115,6 +123,13 @@ h4 {
   font-weight: 600;
   line-height: 1.1375rem;
   color: #090F4E;
+  width: 190px;
+  line-height: 28px;
+  color: #293FCC;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
 }
 @media screen and (max-width: 992px) {
   h4 {
@@ -132,6 +147,11 @@ h4 {
   h4 {
     font-size: 0.6125rem;
     line-height: 0.875rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    margin: 0 auto;
   }
 }
 
@@ -408,20 +428,6 @@ a span {
 .hero .hero__container .hero__content {
   max-width: 450px;
 }
-.hero .hero__container .hero__content .hero__subtitile {
-  width: 190px;
-  line-height: 28px;
-  background-color: #fff;
-  color: #293FCC;
-  border-radius: 10px;
-  padding: 5px;
-  text-align: center;
-}
-@media screen and (max-width: 992px) {
-  .hero .hero__container .hero__content .hero__subtitile {
-    margin: 0 auto;
-  }
-}
 .hero .hero__container .hero__content .hero__title {
   margin-top: 15px;
 }
@@ -471,7 +477,7 @@ a span {
 }
 
 .solution__text {
-  max-width: 780px;
+  max-width: 50%;
   text-align: center;
   margin: 5% auto;
 }
@@ -507,6 +513,12 @@ a span {
   position: absolute;
   width: 100px;
   top: 250px;
+  right: 0;
+}
+@media screen and (max-width: 992px) {
+  .solution__list .solution__item .solution__dots-img--bottom {
+    top: 180px;
+  }
 }
 .solution__list .solution__item.solution__item--shadow {
   box-shadow: 0px 20px 47px rgba(0, 0, 0, 0.05);
@@ -546,4 +558,27 @@ a span {
 .solution__list .solution__item a {
   display: block;
   margin-top: 24px;
+}
+
+#panel {
+  background: linear-gradient(359.64deg, #f0f4ff 0.29%, rgba(242, 245, 255, 0) 103.06%);
+}
+#panel .panel .panel__text {
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+#panel .panel .panel__text .panel__subtitle {
+  background-color: #E5F1FF;
+  margin: 0 auto;
+}
+#panel .panel .panel__text .panel__title {
+  margin-top: 12px;
+}
+#panel .panel .panel__text .panel__desc {
+  margin-top: 32px;
+}
+#panel .panel img {
+  width: 100%;
+  margin-top: 40px;
 }

@@ -20,6 +20,14 @@ html,
   background-color: #fff;
 }
 
+section {
+  margin: 10% auto;
+}
+section:first-child {
+  padding-top: 5%;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -115,6 +123,13 @@ h4 {
   font-weight: 600;
   line-height: 1.1375rem;
   color: #090F4E;
+  width: 190px;
+  line-height: 28px;
+  color: #293FCC;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
 }
 @media screen and (max-width: 992px) {
   h4 {
@@ -132,6 +147,11 @@ h4 {
   h4 {
     font-size: 0.6125rem;
     line-height: 0.875rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h4 {
+    margin: 0 auto;
   }
 }
 

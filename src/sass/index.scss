@@ -17,19 +17,6 @@
     .hero__content {
       max-width: 450px;
 
-      .hero__subtitile {
-        width: 190px;
-        line-height: 28px;
-        background-color: $white;
-        color: $primary-color;
-        border-radius: 10px;
-        padding: 5px;
-        text-align: center;
-
-        @media screen and (max-width: $bp-large) {
-          margin: 0 auto;
-        }
-      }
       .hero__title {
         margin-top: 15px;
       }
@@ -83,7 +70,7 @@
 
 .solution {
   &__text {
-    max-width: 780px;
+    max-width: 50%;
     text-align: center;
     margin: 5% auto;
 
@@ -120,6 +107,13 @@
         position: absolute;
         width: 100px;
         top: 250px;
+        right: 0;
+
+        @media screen and (max-width: $bp-large){
+          top: 180px;
+        }
+
+           
       }
       &.solution__item--shadow {
         box-shadow: 0px 20px 47px rgba(0, 0, 0, 0.05);
@@ -161,6 +155,35 @@
         display: block;
         margin-top: 24px;
       }
+    }
+  }
+}
+
+#panel {
+  background: linear-gradient(359.64deg, #f0f4ff 0.29%, rgba(242, 245, 255, 0) 103.06%);
+  .panel {
+    .panel__text {
+      max-width: $bp-medium;
+      margin: 0 auto;
+      text-align: center;
+
+      .panel__subtitle {
+        background-color: $primary-color-light;
+        margin: 0 auto;
+      }
+
+      .panel__title {
+        margin-top: 12px;
+      }
+
+      .panel__desc {
+        margin-top: 32px;
+      }
+    }
+
+    img {
+      width: 100%;
+      margin-top: 40px;
     }
   }
 }

@@ -23,6 +23,14 @@ html,
   background-color: $background-color;
 }
 
+section {
+  margin: 10% auto;
+  &:first-child {
+    padding-top: 5%;
+    margin: 0;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -77,6 +85,18 @@ h3 {
 
 h4 {
   @include font(0.875rem, 600, $primary-text-color);
+
+  width: 190px;
+  line-height: 28px;
+  color: $primary-color;
+  background-color: $white;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+
+  @media screen and (max-width: $bp-large) {
+    margin: 0 auto;
+  }
 }
 
 h5 {
