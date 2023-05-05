@@ -6,6 +6,8 @@ export const autoreload = () => {
   browserSync.init({
     server: {
       baseDir: config.OUTPUT_DIR,
+      tunnel: true,
+      online: true
     },
   });
 };
