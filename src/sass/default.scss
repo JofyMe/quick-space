@@ -25,6 +25,13 @@ html,
 
 section {
   margin: 10% auto;
+
+  @media screen and (max-width: $bp-medium) {
+    margin: 15% auto;
+  }
+    @media screen and (max-width: $bp-small) {
+    margin: 20% auto;
+  }
   &:first-child {
     padding-top: 5%;
     margin: 0;

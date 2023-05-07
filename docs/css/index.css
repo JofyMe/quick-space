@@ -172,3 +172,94 @@
   width: 100%;
   margin-top: 40px;
 }
+
+#reviews .reviews__text {
+  position: relative;
+}
+#reviews .reviews__text .reviews__title {
+  max-width: 500px;
+  font-size: 48px;
+  font-weight: 500;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  #reviews .reviews__text .reviews__title {
+    font-size: 32px;
+  }
+}
+#reviews .reviews__text .reviews__circle {
+  position: absolute;
+  top: -60px;
+  left: -50px;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  #reviews .reviews__text .reviews__circle {
+    width: 80px;
+    top: -50px;
+    left: -30px;
+  }
+}
+#reviews .reviews__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 60px;
+}
+@media screen and (max-width: 992px) {
+  #reviews .reviews__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 0px;
+  }
+}
+#reviews .reviews__list .reviews__item {
+  width: 80%;
+}
+@media screen and (max-width: 992px) {
+  #reviews .reviews__list .reviews__item {
+    margin-top: 80px;
+  }
+}
+#reviews .reviews__list .reviews__text .reviews__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+}
+#reviews .reviews__list .reviews__text .reviews__desc {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 18px;
+}
+@media screen and (max-width: 768px) {
+  #reviews .reviews__list .reviews__text .reviews__subtitle {
+    font-size: 18px;
+  }
+  #reviews .reviews__list .reviews__text .reviews__desc {
+    font-size: 13px;
+  }
+}
+#reviews .reviews__list .reviews__card {
+  color: #090f4e;
+  display: flex;
+  margin-top: 40px;
+}
+#reviews .reviews__list .reviews__card .reviews__icon {
+  width: 56px;
+  height: 56px;
+}
+#reviews .reviews__list .reviews__card .reviews__info {
+  margin-left: 20px;
+}
+#reviews .reviews__list .reviews__card .reviews__info .reviews__name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #090f4e;
+  padding: 4px;
+}
+#reviews .reviews__list .reviews__card .reviews__info .reviews__work {
+  font-weight: 400;
+  font-size: 14px;
+  color: #090f4e;
+  padding: 4px;
+}

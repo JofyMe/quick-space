@@ -109,11 +109,9 @@
         top: 250px;
         right: 0;
 
-        @media screen and (max-width: $bp-large){
+        @media screen and (max-width: $bp-large) {
           top: 180px;
         }
-
-           
       }
       &.solution__item--shadow {
         box-shadow: 0px 20px 47px rgba(0, 0, 0, 0.05);
@@ -184,6 +182,102 @@
     img {
       width: 100%;
       margin-top: 40px;
+    }
+  }
+}
+
+#reviews {
+  .reviews {
+    &__text {
+      position: relative;
+      .reviews__title {
+        max-width: 500px;
+        font-size: 48px;
+        font-weight: 500;
+        position: relative;
+        @media screen and (max-width: $bp-medium) {
+          font-size: 32px;
+        }
+      }
+
+      .reviews__circle {
+        position: absolute;
+        top: -60px;
+        left: -50px;
+        z-index: 0;
+        @media screen and (max-width: $bp-medium) {
+          width: 80px;
+          top: -50px;
+          left: -30px;
+        }
+      }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      margin-top: 60px;
+
+      @media screen and (max-width: $bp-large) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 0px;
+      }
+
+      .reviews__item {
+        width: 80%;
+
+        @media screen and (max-width: $bp-large) {
+          margin-top: 80px;
+        }
+      }
+      .reviews__text {
+        .reviews__subtitle {
+          font-weight: 500;
+          font-size: 24px;
+        }
+        .reviews__desc {
+          font-weight: 400;
+          font-size: 15px;
+          margin-top: 18px;
+        }
+        @media screen and (max-width: $bp-medium) {
+          .reviews__subtitle {
+            font-size: 18px;
+          }
+          .reviews__desc {
+            font-size: 13px;
+          }
+        }
+      }
+      .reviews__card {
+        color: #090f4e;
+        display: flex;
+        margin-top: 40px;
+
+        .reviews__icon {
+          width: 56px;
+          height: 56px;
+        }
+
+        .reviews__info {
+          margin-left: 20px;
+
+          .reviews__name {
+            font-weight: 600;
+            font-size: 16px;
+            color: #090f4e;
+            padding: 4px;
+          }
+          .reviews__work {
+            font-weight: 400;
+            font-size: 14px;
+            color: #090f4e;
+            padding: 4px;
+          }
+        }
+      }
     }
   }
 }

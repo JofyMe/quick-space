@@ -23,6 +23,16 @@ html,
 section {
   margin: 10% auto;
 }
+@media screen and (max-width: 768px) {
+  section {
+    margin: 15% auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  section {
+    margin: 20% auto;
+  }
+}
 section:first-child {
   padding-top: 5%;
   margin: 0;
