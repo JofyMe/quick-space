@@ -743,12 +743,29 @@ a span {
   color: #63657e;
   margin: 0 16px;
 }
+@media screen and (max-width: 480px) {
+  #plans .plans__text .plans__select .plans__time {
+    font-size: 14px;
+  }
+}
 #plans .plans__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 30px;
   margin-top: 80px;
+}
+@media screen and (max-width: 1200px) {
+  #plans .plans__list {
+    grid-column-gap: 2.7%;
+  }
+}
+@media screen and (max-width: 992px) {
+  #plans .plans__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 #plans .plans__list .plans__card {
   padding: 10%;
@@ -757,7 +774,15 @@ a span {
   border-radius: 15px;
   box-shadow: 0px 20px 47px rgba(0, 0, 0, 0.05);
 }
+@media screen and (max-width: 992px) {
+  #plans .plans__list .plans__card {
+    margin: 5% auto;
+  }
+}
 #plans .plans__list .plans__subtitle {
+  margin-top: 18px;
+}
+#plans .plans__list .plans__subdesc {
   margin-top: 18px;
 }
 #plans .plans__list .plans__price {
@@ -770,6 +795,11 @@ a span {
   font-weight: 600;
   font-size: 42px;
   color: #090f4e;
+}
+@media screen and (max-width: 480px) {
+  #plans .plans__list .plans__price span {
+    font-size: 36px;
+  }
 }
 #plans .plans__list .plans__ul {
   margin-top: 70px;
@@ -784,6 +814,13 @@ a span {
 #plans .plans__list .plans__ul .plans__item p {
   display: inline-block;
   vertical-align: middle;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  #plans .plans__list .plans__ul .plans__item p {
+    font-size: 13px;
+  }
 }
 #plans .plans__list .plans__link {
   width: 100%;
