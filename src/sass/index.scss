@@ -281,3 +281,137 @@
     }
   }
 }
+
+#plans {
+  background: linear-gradient(359.64deg, rgba(240, 244, 255, 0.34) 1.76%, rgba(242, 245, 255, 0) 103.06%);
+
+  .plans {
+    &__text {
+      max-width: $bp-medium;
+      text-align: center;
+      margin: 0 auto;
+
+      .plans__desc {
+        margin-top: 32px;
+      }
+
+      .plans__select {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+
+        .plans__switch {
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 20px;
+
+          input {
+            display: none;
+          }
+
+          .plans__slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            border-radius: 34px;
+            transition: background-color 0.2s;
+
+            &:before {
+              position: absolute;
+              content: "";
+              height: 14px;
+              width: 14px;
+              left: 3px;
+              bottom: 3px;
+              background-color: white;
+              border-radius: 50%;
+              transition: transform 0.2s;
+            }
+          }
+
+          input:checked + .plans__slider {
+            background-color: #2dca8c;
+
+            &:before {
+              transform: translateX(20px);
+            }
+          }
+        }
+        .plans__time {
+          font-size: 18px;
+          font-weight: 500;
+          color: #63657e;
+          margin: 0 16px;
+        }
+      }
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 30px;
+      margin-top: 80px;
+
+      .plans__card {
+        padding: 10%;
+        background: $white;
+        border: 2px solid #f5f6fa;
+        border-radius: 15px;
+        box-shadow: 0px 20px 47px rgba(0, 0, 0, 0.05);
+      }
+      .plans__subtitle {
+        margin-top: 18px;
+      }
+      .plans__desc {
+      }
+      .plans__price {
+        font-weight: 500;
+        font-size: 16px;
+        margin-top: 25px;
+        color: #63657e;
+
+        span {
+          font-weight: 600;
+          font-size: 42px;
+          color: #090f4e;
+        }
+      }
+      .plans__ul {
+        margin-top: 70px;
+        .plans__item {
+          margin-top: 16px;
+          img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          p {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+      .plans__link {
+        width: 100%;
+        color: $primary-color;
+        margin-top: 42px;
+        background: #e5f1ff;
+        border-radius: 10px;
+        &:hover {
+        }
+        &:active {
+        }
+        &:focus {
+        }
+        &--active {
+          background: $primary-color;
+          color: $white;
+        }
+      }
+    }
+  }
+}
