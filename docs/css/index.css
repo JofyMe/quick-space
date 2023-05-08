@@ -413,3 +413,52 @@
   background: #293FCC;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  #letter {
+    background-color: #E5F1FF;
+  }
+}
+#letter .letter {
+  background-color: #E5F1FF;
+  padding: 40px 0 120px 0;
+  border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+  #letter .letter {
+    padding: 40px 0 100px 0;
+  }
+}
+#letter .letter__container {
+  max-width: 400px;
+  margin: auto;
+}
+#letter .letter__container .letter__title {
+  text-align: center;
+}
+#letter .letter__container .letter__desc {
+  margin-top: 14px;
+  text-align: center;
+}
+#letter .letter__container .letter__message {
+  margin-top: 30px;
+  position: relative;
+}
+#letter .letter__container .letter__message input {
+  width: 100%;
+  padding: 20px 0px 20px 35px;
+  background: #fff;
+  border-radius: 50px;
+  position: absolute;
+  color: rgba(11, 7, 87, 0.2);
+  border: 0;
+}
+#letter .letter__container .letter__message button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  right: 12px;
+  top: 7px;
+}

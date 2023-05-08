@@ -435,3 +435,54 @@
     }
   }
 }
+
+#letter {
+  @media screen and (max-width: $bp-medium) {
+    background-color: $primary-color-light;
+  }
+  .letter {
+    background-color: $primary-color-light;
+    padding: 40px 0 120px 0;
+    border-radius: 30px;
+
+    @media screen and (max-width: $bp-medium) {
+      padding: 40px 0 100px 0;
+    }
+
+    &__container {
+      max-width: 400px;
+      margin: auto;
+
+      .letter__title {
+        text-align: center;
+      }
+
+      .letter__desc {
+        margin-top: 14px;
+        text-align: center;
+      }
+      .letter__message {
+        margin-top: 30px;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 20px 0px 20px 35px;
+          background: #fff;
+          border-radius: 50px;
+          position: absolute;
+          color: rgba(11, 7, 87, 0.2);
+          border: 0;
+        }
+        button {
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+          margin: auto;
+          position: absolute;
+          right: 12px;
+          top: 7px;
+        }
+      }
+    }
+  }
+}
