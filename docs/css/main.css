@@ -866,7 +866,7 @@ a span {
 }
 #letter .letter__container .letter__message input {
   width: 100%;
-  padding: 20px 0px 20px 35px;
+  padding: 20px 70px 20px 35px;
   background: #fff;
   border-radius: 50px;
   position: absolute;
@@ -881,4 +881,78 @@ a span {
   position: absolute;
   right: 12px;
   top: 7px;
+}
+
+#footer .footer__top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 35% 40% 25%;
+}
+#footer .footer__top .footer__contact .footer__nav {
+  margin-top: 80px;
+}
+#footer .footer__top .footer__contact .footer__nav .footer__list {
+  color: #63657e;
+}
+#footer .footer__top .footer__contact .footer__nav .footer__list .footer__item {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+#footer .footer__top .footer__contact .footer__nav .footer__list .footer__item p {
+  margin-left: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+#footer .footer__top .footer__navigation .footer__nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+#footer .footer__top .footer__navigation .footer__nav .footer__title {
+  margin-bottom: 44px;
+}
+#footer .footer__top .footer__navigation .footer__nav .footer__item {
+  margin-top: 27px;
+}
+#footer .footer__top .footer__adress .footer__title {
+  margin-bottom: 44px;
+}
+#footer .footer__top .footer__adress .footer__map {
+  display: flex;
+  align-items: center;
+  color: #63657e;
+}
+#footer .footer__top .footer__adress .footer__map .footer__item {
+  max-width: 180px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 16px;
+}
+#footer .footer__top .footer__adress .footer__social .footer__nav .footer__list {
+  display: flex;
+  margin-top: 44px;
+}
+#footer .footer__top .footer__adress .footer__social .footer__nav .footer__list .footer__item {
+  color: #63657e;
+  margin-right: 24px;
+}
+#footer .footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: 10%;
+  padding: 3% 0;
+}
+#footer .footer__bottom .footer__copyright .footer__text {
+  align-items: start;
+}
+#footer .footer__bottom .footer__docs .footer__nav .footer__list {
+  display: flex;
+  justify-content: flex-end;
+}
+#footer .footer__bottom .footer__docs .footer__nav .footer__list .footer__item {
+  margin-right: 32px;
 }

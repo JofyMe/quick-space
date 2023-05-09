@@ -1,1 +1,123 @@
 @import "../../variables.scss";
+
+#footer {
+  .footer {
+    &__top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 35% 40% 25%;
+
+      .footer__contact {
+        img {
+        }
+        .footer__nav {
+          margin-top: 80px;
+          .footer__list {
+            color: #63657e;
+            .footer__item {
+              display: flex;
+              align-items: center;
+              margin-top: 24px;
+              p {
+                margin-left: 16px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+
+      .footer__navigation {
+        .footer__nav {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+
+          .footer__title {
+            margin-bottom: 44px;
+          }
+          .footer__item {
+            margin-top: 27px;
+            p {
+            }
+            a {
+              &:hover {
+              }
+              &:active {
+              }
+              &:focus {
+              }
+            }
+          }
+        }
+      }
+
+      .footer__adress {
+        .footer__title {
+          margin-bottom: 44px;
+        }
+        .footer__map {
+          display: flex;
+          align-items: center;
+          color: #63657e;
+          .footer__item {
+            max-width: 180px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            margin-left: 16px;
+          }
+        }
+        .footer__social {
+          .footer__nav {
+            .footer__list {
+              display: flex;
+              margin-top: 44px;
+              .footer__item {
+                color: #63657e;
+                margin-right: 24px;
+              }
+            }
+          }
+        }
+      }
+      img {
+      }
+    }
+
+    &__bottom {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      margin-top: 10%;
+      padding: 3% 0;
+
+      .footer__copyright {
+        .footer__text {
+          align-items: start;
+        }
+      }
+      .footer__docs {
+        .footer__nav {
+          .footer__list {
+            display: flex;
+            justify-content: flex-end;
+            .footer__item {
+              margin-right: 32px;
+              .footer__link {
+                &:hover {
+                }
+                &:active {
+                }
+                &:focus {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
