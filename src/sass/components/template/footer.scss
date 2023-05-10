@@ -7,7 +7,19 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-columns: 35% 40% 25%;
 
+      @media screen and (max-width: $bp-large) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 33% 33% 33%;
+        text-align: center;
+      }
+
       .footer__contact {
+        @media screen and (max-width: $bp-large) {
+          margin: 0 auto;
+        }
+
         img {
         }
         .footer__nav {
@@ -23,6 +35,9 @@
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 30px;
+                @media screen and (max-width: $bp-small) {
+                  font-size: 16px;
+                }
               }
             }
           }
@@ -55,6 +70,9 @@
       }
 
       .footer__adress {
+        @media screen and (max-width: $bp-large) {
+          margin: 80px auto;
+        }
         .footer__title {
           margin-bottom: 44px;
         }
@@ -68,6 +86,11 @@
             font-size: 18px;
             line-height: 30px;
             margin-left: 16px;
+            p {
+              @media screen and (max-width: $bp-medium) {
+                font-size: 16px;
+              }
+            }
           }
         }
         .footer__social {
@@ -75,6 +98,9 @@
             .footer__list {
               display: flex;
               margin-top: 44px;
+              @media screen and (max-width: $bp-large) {
+                justify-content: center;
+              }
               .footer__item {
                 color: #63657e;
                 margin-right: 24px;
@@ -94,18 +120,37 @@
       margin-top: 10%;
       padding: 3% 0;
 
+      @media screen and (max-width: $bp-large) {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+      }
       .footer__copyright {
+        @media screen and (max-width: $bp-large) {
+          margin: 40px auto;
+        }
         .footer__text {
           align-items: start;
         }
       }
       .footer__docs {
+        @media screen and (max-width: $bp-large) {
+          width: 100%;
+          margin: 0 auto;
+        }
+
         .footer__nav {
           .footer__list {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             .footer__item {
               margin-right: 32px;
+              &:last-child {
+                margin-right: 0px;
+              }
+              @media screen and (max-width: $bp-small) {
+                margin-right: 16px;
+              }
               .footer__link {
                 &:hover {
                 }
